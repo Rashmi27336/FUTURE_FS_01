@@ -403,15 +403,6 @@ footer p {
     margin-bottom: 10px;
 }
 
-.resume-btn {
-    display: inline-block;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    background-color: #333;
-    color: white;
-}
 .view-resume-btn {
     display: inline-block;
     padding: 12px 25px;
@@ -420,9 +411,9 @@ footer p {
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .view-resume-btn:hover {
     background-color: #0056b3;
 }
-
