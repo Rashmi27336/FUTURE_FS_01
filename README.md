@@ -1,43 +1,46 @@
-# 🍽️ Royal Spice – Restaurant Website
+# 🌐 Personal Resume & Portfolio Website
 
-A modern and responsive restaurant website developed as part of the **Future Interns Full Stack Web Development Internship – Task 3**.
+A responsive personal resume and portfolio website developed as part of the **Future Interns Full Stack Web Development Internship – Task 1**.
 
-Royal Spice is a restaurant website that allows visitors to explore the restaurant, view the menu, learn about the chef, make a table booking, and find contact information.
+This portfolio website presents my personal information, skills, education, projects, achievements, resume, and contact details in a professional and user-friendly interface.
 
 ---
 
 ## Project Overview
 
-The **Royal Spice Restaurant Website** is designed as a professional and user-friendly restaurant website.
+The **Personal Resume & Portfolio Website** is designed to create an online professional profile.
 
 Visitors can:
 
-- Explore the restaurant
-- Learn about the restaurant
-- View the food menu
-- View chef information
-- Book a table
-- View contact information
-- Navigate smoothly between different sections
+- Learn about me
+- View my skills
+- View my education
+- Explore my projects
+- View my achievements
+- Download my resume
+- View my contact information
+- Navigate through different sections of the portfolio
 
-The project uses **HTML, CSS, and JavaScript** to create the website structure, styling, responsiveness, and interactive functionality.
+The project uses **HTML, CSS, and JavaScript** to create the structure, styling, responsiveness, and interactive functionality of the website.
 
 ---
 
 ## Features
 
 - 🏠 Home Section
-- 📖 About Section
-- 🍴 Food Menu
-- 👨‍🍳 Chef Section
-- 📅 Table Booking
+- 👩‍💻 About Me Section
+- 🎓 Education Section
+- 💻 Skills Section
+- 📂 Projects Section
+- 🏆 Achievements Section
+- 📄 Resume Section
 - 📞 Contact Section
 - 📱 Responsive Design
 - ✨ Smooth Scrolling
-- 🎨 Hover Animations
+- 🎨 Hover Effects
 - ⚡ JavaScript Interactions
-- ✅ Booking Confirmation Message
-- 📆 Dynamic Current Year in Footer
+- 📥 Resume Download
+- 📱 Mobile-Friendly Layout
 
 ---
 
@@ -61,69 +64,64 @@ The project uses **HTML, CSS, and JavaScript** to create the website structure, 
 ## Project Structure
 
 ```text
-FUTURE_FS_03/
-│
-├── images/
-│   ├── food images
-│   ├── chef images
-│   └── restaurant images
+FUTURE_FS_01/
 │
 ├── index.html
 ├── style.css
 ├── script.js
+├── V_Rashmi_Resume.pdf
 └── README.md
 ```
-Main Pages
+Main Sections
+
 🏠 Home
 
-The Home section provides:
+The Home section introduces me and provides a quick overview of my professional profile.
 
-Restaurant introduction
-Attractive landing section
-Navigation options
-Call-to-action buttons
-📖 About
+It includes:
 
-The About section provides information about the restaurant and its services.
+Name
+Introduction
+Navigation
+Call-to-action options
+👩‍💻 About
 
-🍴 Menu
+The About section provides information about my background, interests, and career goals.
 
-The Menu section displays:
+🎓 Education
 
-Food items
-Food descriptions
-Prices
-Different menu options
-👨‍🍳 Chef
+The Education section presents my academic information.
 
-The Chef section introduces the restaurant's chef and provides information about the culinary team.
+💻 Skills
 
-📅 Booking
+The Skills section displays my technical skills and areas of interest.
 
-The Booking section allows visitors to enter their details and request a table reservation.
+📂 Projects
 
-The booking form includes:
+The Projects section showcases the projects I have developed and provides information about my practical experience.
 
-Customer name
-Contact information
-Date
-Time
-Number of guests
+🏆 Achievements
 
-After submitting the form, a booking confirmation message is displayed.
+The Achievements section displays my certifications, accomplishments, and learning achievements.
+
+📄 Resume
+
+The Resume section provides access to my resume.
+
+Visitors can view or download the resume directly from the website.
 
 📞 Contact
 
-The Contact section provides restaurant contact information and location details.
+The Contact section provides ways to connect with me and includes relevant contact information.
 
 Installation and Setup
 
 Follow these steps to run the project locally.
 
 1. Clone the Repository
-git clone https://github.com/Rashmi27336/FUTURE_FS_03.git
+git clone https://github.com/Rashmi27336/FUTURE_FS_01.git
 2. Navigate to the Project Folder
-cd FUTURE_FS_03
+cd FUTURE_FS_01
 3. Open the Project
 
 Open the project folder in Visual Studio Code.
@@ -136,11 +134,11 @@ You can also use the Live Server extension in Visual Studio Code.
 
 🌐 Live Website
 
-https://rashmi27336.github.io/FUTURE_FS_03/
+https://rashmi27336.github.io/FUTURE_FS_01/
 
 📂 GitHub Repository
 
-https://github.com/Rashmi27336/FUTURE_FS_03
+https://github.com/Rashmi27336/FUTURE_FS_01
 
 Testing
 
@@ -148,12 +146,17 @@ The following features were tested during development:
 
 ✅ Navigation between sections
 ✅ Responsive layout
-✅ Menu section
-✅ Booking form
-✅ Booking confirmation message
-✅ Smooth scrolling
-✅ Hover animations
+✅ Home section
+✅ About section
+✅ Education section
+✅ Skills section
+✅ Projects section
+✅ Achievements section
+✅ Resume section
+✅ Resume download
 ✅ Contact section
+✅ Hover effects
+✅ JavaScript functionality
 ✅ Mobile-friendly layout
 ✅ Desktop layout
 ✅ GitHub Pages deployment
@@ -161,15 +164,17 @@ GitHub Security
 
 The project does not contain passwords, API keys, or other sensitive information.
 
-Local development files and unnecessary files are not included in the public repository.
+Only required project files are included in the public repository.
+
+Local development files and unnecessary files are excluded from the repository where applicable.
 
 Future Interns Internship
 
 Internship: Future Interns Full Stack Web Development Internship
 
-Project: Royal Spice Restaurant Website
+Project: Personal Resume & Portfolio Website
 
-Task: Task 3
+Task: Task 1
 
 This project was developed as part of the Future Interns Full Stack Web Development Internship.
 
@@ -185,15 +190,14 @@ Future Improvements
 
 The following features can be added in future versions:
 
+📩 Functional contact form
 🗄️ Backend integration
-💾 Database for storing bookings
-📧 Email confirmation
-💳 Online payment
-🛒 Online food ordering
-👤 Customer login and registration
-⭐ Customer reviews and ratings
-🛠️ Admin dashboard
-📊 Online booking management
+🌙 Dark mode
+🎨 Additional UI animations
+📊 More project demonstrations
+📝 Blog section
+🔗 Additional professional profile links
+🚀 Improved portfolio interactions
 Author
 
 V. Rashmi
