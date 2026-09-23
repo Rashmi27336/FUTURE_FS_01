@@ -1,63 +1,213 @@
-# FUTURE_FS_01 – Personal Professional Portfolio Website
+# 🍽️ Royal Spice – Restaurant Website
 
-## 📌 Project Overview
+A modern and responsive restaurant website developed as part of the **Future Interns Full Stack Web Development Internship – Task 3**.
 
-This project is a Personal Professional Portfolio Website developed as part of the Future Interns Full Stack Web Development Internship.
+Royal Spice is a restaurant website that allows visitors to explore the restaurant, view the menu, learn about the chef, make a table booking, and find contact information.
 
-The website presents my professional profile, education, technical skills, projects, achievements, resume and contact information in a responsive and user-friendly format.
+---
 
-## 🎯 Objective
+## Project Overview
 
-The main objective of this project is to create a professional online portfolio that can be used to showcase my technical skills, projects and career profile.
+The **Royal Spice Restaurant Website** is designed as a professional and user-friendly restaurant website.
 
-## ✨ Features
+Visitors can:
 
-- 🏠 Professional Home section
-- 👩‍💻 About Me section
-- 🎓 Education details
-- 💻 Technical Skills
-- 📄 Resume section with resume PDF
-- 🚀 Projects section
-- 🏆 Achievements
-- 📧 Contact form
-- 📩 Email notification using EmailJS
-- 🌙 Dark mode
-- 📱 Responsive design
-- 🔗 Professional profile links
+- Explore the restaurant
+- Learn about the restaurant
+- View the food menu
+- View chef information
+- Book a table
+- View contact information
+- Navigate smoothly between different sections
 
-## 🛠️ Technologies Used
+The project uses **HTML, CSS, and JavaScript** to create the website structure, styling, responsiveness, and interactive functionality.
+
+---
+
+## Features
+
+- 🏠 Home Section
+- 📖 About Section
+- 🍴 Food Menu
+- 👨‍🍳 Chef Section
+- 📅 Table Booking
+- 📞 Contact Section
+- 📱 Responsive Design
+- ✨ Smooth Scrolling
+- 🎨 Hover Animations
+- ⚡ JavaScript Interactions
+- ✅ Booking Confirmation Message
+- 📆 Dynamic Current Year in Footer
+
+---
+
+## Technologies Used
+
+### Frontend
 
 - HTML5
 - CSS3
 - JavaScript
-- EmailJS
-- Git & GitHub
 
-## 📂 Project Structure
+### Development Tools
+
+- Visual Studio Code
+- Git
+- GitHub
+- GitHub Pages
+
+---
+
+## Project Structure
 
 ```text
-FUTURE_FS_01/
+FUTURE_FS_03/
 │
 ├── images/
+│   ├── food images
+│   ├── chef images
+│   └── restaurant images
+│
 ├── index.html
 ├── style.css
 ├── script.js
-├── V_Rashmi_Resume.pdf
 └── README.md
-## 📧 Contact Form
+```
+Main Pages
+🏠 Home
 
-The contact form is integrated with EmailJS to send messages to the configured email account.
+The Home section provides:
 
-## 🎓 Internship
+Restaurant introduction
+Attractive landing section
+Navigation options
+Call-to-action buttons
+📖 About
 
-**Future Interns – Full Stack Web Development Internship**
+The About section provides information about the restaurant and its services.
 
-**Task 1:** Personal Professional Portfolio Website
+🍴 Menu
 
-## 👩‍💻 Developer
+The Menu section displays:
 
-**V. Rashmi**
+Food items
+Food descriptions
+Prices
+Different menu options
+👨‍🍳 Chef
 
-B.E. Information Science Engineering  
-Shree Devi Institute of Technology, Mangalore  
-Expected Graduation: 2028
+The Chef section introduces the restaurant's chef and provides information about the culinary team.
+
+📅 Booking
+
+The Booking section allows visitors to enter their details and request a table reservation.
+
+The booking form includes:
+
+Customer name
+Contact information
+Date
+Time
+Number of guests
+
+After submitting the form, a booking confirmation message is displayed.
+
+📞 Contact
+
+The Contact section provides restaurant contact information and location details.
+
+Installation and Setup
+
+Follow these steps to run the project locally.
+
+1. Clone the Repository
+git clone https://github.com/Rashmi27336/FUTURE_FS_03.git
+2. Navigate to the Project Folder
+cd FUTURE_FS_03
+3. Open the Project
+
+Open the project folder in Visual Studio Code.
+
+4. Run the Website
+
+Open index.html in your browser.
+
+You can also use the Live Server extension in Visual Studio Code.
+
+🌐 Live Website
+
+https://rashmi27336.github.io/FUTURE_FS_03/
+
+📂 GitHub Repository
+
+https://github.com/Rashmi27336/FUTURE_FS_03
+
+Testing
+
+The following features were tested during development:
+
+✅ Navigation between sections
+✅ Responsive layout
+✅ Menu section
+✅ Booking form
+✅ Booking confirmation message
+✅ Smooth scrolling
+✅ Hover animations
+✅ Contact section
+✅ Mobile-friendly layout
+✅ Desktop layout
+✅ GitHub Pages deployment
+GitHub Security
+
+The project does not contain passwords, API keys, or other sensitive information.
+
+Local development files and unnecessary files are not included in the public repository.
+
+Future Interns Internship
+
+Internship: Future Interns Full Stack Web Development Internship
+
+Project: Royal Spice Restaurant Website
+
+Task: Task 3
+
+This project was developed as part of the Future Interns Full Stack Web Development Internship.
+
+The project demonstrates frontend web development using:
+
+HTML
+CSS
+JavaScript
+Git
+GitHub
+GitHub Pages
+Future Improvements
+
+The following features can be added in future versions:
+
+🗄️ Backend integration
+💾 Database for storing bookings
+📧 Email confirmation
+💳 Online payment
+🛒 Online food ordering
+👤 Customer login and registration
+⭐ Customer reviews and ratings
+🛠️ Admin dashboard
+📊 Online booking management
+Author
+
+V. Rashmi
+
+Information Science Engineering Student
+
+GitHub:
+
+https://github.com/Rashmi27336
+
+Acknowledgement
+
+Thanks to Future Interns for providing the opportunity to develop this project as part of the Full Stack Web Development Internship.
+
+License
+
+This project was created for educational and internship purposes.
