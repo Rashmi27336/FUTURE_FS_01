@@ -1,72 +1,115 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    // ==================== Contact Form ====================
+
     const contactForm = document.getElementById("contactForm");
     const formMessage = document.getElementById("formMessage");
 
-    contactForm.addEventListener("submit", function (event) {
-        event.preventDefault();
+    if (contactForm && formMessage) {
 
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const message = document.getElementById("message").value.trim();
+        contactForm.addEventListener("submit", function (event) {
 
-        // Check empty fields
-        if (name === "" || email === "" || message === "") {
-            formMessage.textContent = "Please fill in all the fields.";
-            formMessage.style.color = "red";
-            return;
-        }
+            // Prevent page refresh
+            event.preventDefault();
 
-        // Check email format
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            // Get form values
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
 
-        if (!emailPattern.test(email)) {
-            formMessage.textContent = "Please enter a valid email address.";
-            formMessage.style.color = "red";
-            return;
-        }
+            // ==================== Empty Field Validation ====================
 
-        // Send form through EmailJS
-        emailjs.sendForm(
-            "service_noy1yh7",
-            "template_3vuu1jr",
-            contactForm
-        )
-        .then(function () {
+            if (name === "" || email === "" || message === "") {
 
-            formMessage.textContent =
-                "Thank you, " + name + "! Your message has been sent successfully.";
+                formMessage.textContent =
+                    "⚠️ Please fill in all the fields.";
 
-            formMessage.style.color = "green";
+                formMessage.className = "form-message error";
 
-            contactForm.reset();
+                return;
+            }
 
-        })
-        .catch(function (error) {
+            // ==================== Email Validation ====================
 
-            console.error("EmailJS Error:", error);
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailPattern.test(email)) {
+
+                formMessage.textContent =
+                    "⚠️ Please enter a valid email address.";
+
+                formMessage.className = "form-message error";
+
+                return;
+            }
+
+            // ==================== Sending Message ====================
 
             formMessage.textContent =
-                "Sorry, your message could not be sent. Please try again.";
+                "⏳ Sending your message...";
 
-            formMessage.style.color = "red";
+            formMessage.className = "form-message sending";
+
+
+            emailjs.sendForm(
+                "service_noy1yh7",
+                "template_3vuu1jr",
+                contactForm
+            )
+
+            .then(function () {
+
+                // Success message
+                formMessage.textContent =
+                    "✅ Message sent successfully! Thank you, " +
+                    name +
+                    ". I’ll get back to you soon.";
+
+                formMessage.className = "form-message success";
+
+                // Clear form
+                contactForm.reset();
+
+            })
+
+            .catch(function (error) {
+
+                console.error("EmailJS Error:", error);
+
+                formMessage.textContent =
+                    "❌ Sorry, your message could not be sent. Please try again.";
+
+                formMessage.className = "form-message error";
+
+            });
+
         });
-    });
+
+    }
 
 
-    // Dark mode
+    // ==================== Dark Mode ====================
+
     const themeToggle = document.getElementById("themeToggle");
 
-    themeToggle.addEventListener("click", function () {
+    if (themeToggle) {
 
-        document.body.classList.toggle("dark-mode");
+        themeToggle.addEventListener("click", function () {
 
-        if (document.body.classList.contains("dark-mode")) {
-            themeToggle.textContent = "☀️";
-        } else {
-            themeToggle.textContent = "🌙";
-        }
+            document.body.classList.toggle("dark-mode");
 
-    });
+            if (document.body.classList.contains("dark-mode")) {
+
+                themeToggle.textContent = "☀️";
+
+            } else {
+
+                themeToggle.textContent = "🌙";
+
+            }
+
+        });
+
+    }
 
 });
